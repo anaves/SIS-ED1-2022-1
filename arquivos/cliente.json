@@ -1,0 +1,42 @@
+[
+  {
+    "cpf": "904.097.680-57",
+    "telefone": "(48) 2545-5984",
+    "email": "annabel26@hotmail.com",
+    "nome": "Gene Conley",
+    "endereco": "75961 Homenick Springs Suite 854 - Kentwood, AK / 28513",
+    "dataNascimento": "19/08/1997"
+  },
+  {
+    "cpf": "525.872.010-12",
+    "telefone": "(94) 3736-7647",
+    "email": "marcos.koch22@gmail.com",
+    "nome": "Nastia Liukin",
+    "endereco": "08349 Borer Plaza Suite 005 - Shreveport, TN / 42902",
+    "dataNascimento": "26/01/1989"
+  },
+  {
+    "cpf": "601.524.480-12",
+    "telefone": "(65) 3686-2270",
+    "email": "reynold.harris@gmail.com",
+    "nome": "Richard Armitage",
+    "endereco": "927 Alisa Mall Apt. 246 - Coeur d'Alene, VT / 98852",
+    "dataNascimento": "25/07/2003"
+  },
+  {
+    "cpf": "136.569.900-50",
+    "telefone": "(89) 2132-5202",
+    "email": "kaylee_labadie@gmail.com",
+    "nome": "Katharine Hepburn",
+    "endereco": "915 Durgan Crossing Suite 635 - Hilton Head Island, ID / 13410",
+    "dataNascimento": "24/09/1989"
+  },
+  {
+    "cpf": "751.545.720-17",
+    "telefone": "(85) 3258-5243",
+    "email": "lillian0@gmail.com",
+    "nome": "Benjamin Franklin",
+    "endereco": "619 Kevin Islands Suite 417 - Taylorsville, VT / 63167",
+    "dataNascimento": "09/05/1999"
+  }
+]
