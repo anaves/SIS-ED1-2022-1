@@ -38,5 +38,14 @@
     "nome": "Benjamin Franklin",
     "endereco": "619 Kevin Islands Suite 417 - Taylorsville, VT / 63167",
     "dataNascimento": "09/05/1999"
+  },
+  {
+    "cpf": "710.192.470-02",
+    "telefone": "(75) 99205-0532",
+    "email": "renato-alves78@yahoo.com .br",
+    "nome": "Renato Lorenzo Thales Alves",
+    "endereco": "Rua Otávio Mangabeira, 592",
+    "dataNascimento": "23/03/2004"
   }
+
 ]
