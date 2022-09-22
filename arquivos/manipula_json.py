@@ -4,6 +4,7 @@ def abrir_arquivo(url):
     dados = None
     with open(url, encoding="utf-8") as arquivo:
         dados = json.load(arquivo)       
+    arquivo.close()
     return dados
 
 def informacoes(reg):
@@ -28,8 +29,38 @@ def listar_por_cpf(dados, cpf):
             return True
     print('Nao encontrado')
     return False
+
+def adiciona():
+    print('----- Adiciona novo registro -----')
+    registro = {}
+    registro['nome'] = input('Digite o nome: ')
+    registro['cpf'] = input('Digite o CPF: ')
+    registro['email'] = input('Digite o e-mail: ')
+    registro['telefone'] = input('Digite o telefone: ')
+    registro['endereco'] = input('Digite o endereco: ')
+    registro['dataNascimento'] = input('Digite a data de nascimento: ')
+    print(registro)
+    return registro
     
+
+def salvar(dados, url):
+    # transformar de dict para json
+    # serializar json
+    objeto_json = json.dumps(dados, indent=4)
+    with open(url, "w") as saida:
+        saida.write(objeto_json)
+
+# Exercicio - implementar o metodo que exclui um determinado registro e posteriormente salve os dados no arquivo sem o registro excluido da base dados
+def excluir(dados, cpf):
+    pass
+
 if __name__== "__main__":
-    base_dados = abrir_arquivo("./files/cliente.json")
-    listar_todos(base_dados)
-    listar_por_cpf(base_dados,'751.535.720-17')
+    url = "./files/cliente.json"
+    base_dados = abrir_arquivo(url)
+    # listar_todos(base_dados)
+    # listar_por_cpf(base_dados,'751.535.720-17')
+    novo_registro = adiciona()
+    base_dados.append(novo_registro)
+    salvar(base_dados,url)
+
+    
