@@ -1,4 +1,5 @@
 import json
+import pstats
 
 def abrir_arquivo(url):
     dados = None
@@ -52,15 +53,20 @@ def salvar(dados, url):
 
 # Exercicio - implementar o metodo que exclui um determinado registro e posteriormente salve os dados no arquivo sem o registro excluido da base dados
 def excluir(dados, cpf):
-    pass
+    for indice,registro in enumerate(dados):
+        pass
+
 
 if __name__== "__main__":
     url = "./files/cliente.json"
     base_dados = abrir_arquivo(url)
+    print(type(base_dados))
+    print(type(base_dados[0]))
+    print(base_dados)
     # listar_todos(base_dados)
     # listar_por_cpf(base_dados,'751.535.720-17')
-    novo_registro = adiciona()
-    base_dados.append(novo_registro)
-    salvar(base_dados,url)
+    #novo_registro = adiciona()
+    #base_dados.append(novo_registro)
+    #salvar(base_dados,url)
 
     
