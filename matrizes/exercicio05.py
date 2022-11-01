@@ -16,6 +16,8 @@ for c in range(n):
         linha.append(matriz[l][c])
     transposta.append(linha)
 imprimir(transposta)
+print('---------')
+print(transposta)
 # import numpy as np
 # a = np.array(matriz)
 # print(a)
