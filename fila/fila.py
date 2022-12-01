@@ -10,7 +10,7 @@ class Fila:
 
     def remover(self):
         # remove do inicio
-        if len(self.__dados) > 0:
+        if not self.eh_vazia():
             return self.__dados.pop(0)
         else:
             print('Lista vazia')
@@ -20,4 +20,6 @@ class Fila:
     def info(self):
         return self.__dados
 
+    def eh_vazia(self):
+        return len(self.__dados) == 0
 
